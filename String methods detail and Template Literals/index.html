@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings methods</title>
+  </head>
+  <body>
+    <script src="./practise.js"></script>
+    <h2>JavaScript Strings</h2>
+
+<p>Check in the 11 first characters of a string ends with "world":</p>
+
+<p id="demo"></p>
+
+<p>The endsWith() method is not supported in Internet Explorer.</p>
+
+<script>
+let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = text.endsWith("world", 11);
+</script>
+  </body>
+</html>
