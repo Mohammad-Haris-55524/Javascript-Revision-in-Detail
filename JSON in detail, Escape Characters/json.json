@@ -1,0 +1,40 @@
+{
+"User Information":[
+{"name":"John", 
+"age": 21,
+"city": "karachi",
+"location": null,
+"phone no": false, 
+"address" : {"street" : 3, "survey": 87, "Area": "Golden Town"} 
+},
+
+{"name":"John", 
+"age": 21,
+"city": "karachi",
+"location": null,
+"phone no": false,
+"address" : {"street" : 3, "survey": 87, "Area": "Golden Town"} 
+},
+
+{"name":"John", 
+"age": 21,
+"city": "karachi",
+"location": null,
+"phone no": false,
+"address" : {"street" : 3, "survey": 87, "Area": "Golden Town"} 
+}
+],
+
+"Favourite Disher":[
+{"food name": "biryani",
+  "ingredients": {"dal chini": "2 gram", "long": "10gram", "elachi": "4 pieces" }
+},
+
+{"food name": "qourma",
+  "ingredients": {"dal chini": "2 gram", "long": "10gram", "elachi": "4 pieces" }
+},
+{"food name": "karahi",
+  "ingredients": {"dal chini": "2 gram", "long": "10gram", "elachi": "4 pieces" }
+}
+]
+}
