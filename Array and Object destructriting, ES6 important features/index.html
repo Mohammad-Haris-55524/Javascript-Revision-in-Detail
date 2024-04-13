@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./practise.js"></script>
+  </head>
+  <body>
+    <div>
+      <h3>WHAT IS OPTIMAL CHAINING</h3>
+      <p>
+        Optional chaining (?.) is a feature introduced in ECMAScript 2020 (ES11)
+        that allows you to access properties of an object without the need to
+        explicitly check if each level of nested properties exists. It helps to
+        simplify code and avoid errors caused by accessing properties of null or
+        undefined. Optional chaining (?.) is not limited to objects only. It can also be used with arrays and function calls.
+      </p>
+      <p>
+        Optional chaining can be combined with the nullish coalescing operator
+        (??) to provide a default value if the result is null or undefined.
+      </p>
+      <P>
+        You are correct, optional chaining (?.) does not work on root-level properties of objects in JavaScript. It's designed to work with nested properties, arrays, and function calls.
+        
+        If you try to use optional chaining on a root-level property, it won't throw an error, but it will simply return undefined. This is because there's no preceding property or object to check for existence.</P>
+      <p>
+        <h4>Why Use Optional Chaining?</h4>
+        <ul><li>Simplified Code: It reduces the need for
+            verbose null/undefined checks, making the code cleaner and more
+            readable.</li>
+        <li>Avoid Errors: It helps to prevent errors like "Cannot read
+            property 'x' of undefined" by gracefully handling missing properties or
+            nested properties.</li>
+        <li> Concise Syntax: It provides a concise syntax for
+            accessing nested properties, function calls, and array elements in a
+            safe manner.</li></ul> 
+            <summary>Overall, optional chaining improves code robustness and
+                readability by simplifying property access in scenarios where object
+                properties may be missing or null/undefined.</summary> 
+      </p>
+    </div>
+
+    <div><h4>Boolean casting</h4>
+    <p>In summary, boolean casting in JavaScript is a process of converting non-boolean values to boolean values.
+    It is useful for conditional logic, type conversion, and comparison operations. It can be done implicitly
+    or explicitly using functions like Boolean() or !!.</p>
+  </div>
+  </body>
+</html>
