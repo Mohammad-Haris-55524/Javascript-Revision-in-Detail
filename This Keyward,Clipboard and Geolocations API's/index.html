@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./practise.js"></script>
+</head>
+<body>
+<h1>Topics we studied in this chapter</h1>
+<div class="para-1">
+    <h3 id="demo">The Browser Object Model (BOM)</h3>
+    <H3>Window.navigator.clipboard API</H3>
+    <H3>Window.navigator.geolocation API</H3>
+    <H3>Window.navigator.online API</H3>
+    <H3>Window.navigator.connection API</H3>
+    <H3>THIS keyward</H3>
+    Yes, navigator is also an API provided by web browsers. It represents an object that contains information about the web browser's environment and capabilities. Developers can use navigator to access various properties and methods related to the browser, such as navigator.userAgent to get information about the user agent string, navigator.geolocation to access the user's geolocation, navigator.language to get the preferred language of the user, and navigator.clipboard as we discussed earlier to interact with the system clipboard. It provides a way for web developers to access and utilize browser-specific functionalities within their web applications.
+    <p style="border: 2px solid black;">Navigator.clipboard: Is an API provided by modern web browsers that allows JavaScript code to interact with the system clipboard
+    (i.e., the place where text or other data is temporarily stored when copied or cut). It provides methods for reading from and writing
+    to the clipboard.</p>
+    <h5 style="border: 2px solid black;">In summary, navigator.clipboard is an API that allows web developers to interact with the system clipboard in a controlled and 
+    asynchronous way, providing methods for reading and writing clipboard contents.</h5>
+    <!-- Method 01: THIS keyward ky through ham value pass kar rahy han iss button ki taky jab ham button par click karen to button ka text 
+    badal gy copyToClipboard ==> COPIED ho gy -->
+    <button onclick="copyToClipboard(this)">Copy to clipboard</button>  
+    <!-- Method 02: ID method ky through bhe button ki value ko change kar skty han jab text copy kar ly ga user to button ky text ko innerHTML
+    ky through get kar skty han or phr innerHTML ky through new value set bhe kara skty han kiu ky innerHTML setter or getter dono ky liye use 
+    hota hay-->
+    <!-- <button id="button-value" onclick="copyToClipboard()">Copy to clipboard</button> -->
+</div>
+<button onclick="getLocation(this)">click for location</button>
+<button onclick="checkingThisKeyward(this)">THIS keyward by using event example # 05</button>
+    
+</body>
+</html>
