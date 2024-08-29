@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom class 02</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+    <h1>Introduction to DOM</h1>
+    <H2>Topic: Changing HTML Elements</H2>
+    <h3>Dom class 02</h3>
+    </header>
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, nesciunt!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, nesciunt!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, nesciunt!</p>
+      <input type="text">
+      <input type="text" placeholder="Enter Your name ">
+
+
+    </section>
+<main>
+<h3>Differences:</h3>
+<b>createTextNode</b> Can only be used to create text node.
+<b>textContent</b> It can be used to get, set and update content of a node.
+<h2 id="check-attribute" class="heading">In dono my main diference yah hy ky createTextNode tab use karna chaihyee maan lo mery pas data aa raha hy form ky 
+    through yah API sy lekin my woh show karanay sy phely uss my manupulation karana chahta chahta hon tab my iss property
+    ko use karo ga yani createTextNode bana kar jesy const productDetail = document.createTextNode(product.description); 
+    iss my my ny product detail my data save kara liya hy or ab mujhy uss my kuch manupulation karani hy direct show nae
+    karana to ab iss METHOD ko use karo ga or jab munupulate kara lo ga tab usy usss node ky sath append kara dn ga jis 
+    ky sath karana chah raha hon ga or pichla data wesy ka wesay para rahy ga yah uss ky sath end my jaa kar add/ append
+    ho gy ga. (CHECK EXAMPLE ON LINE 185)
+    <br>
+    <b>textContent</b> Directly manupulation karany ky liye use hota hy node karaye begair . <p>Yah aik time par bhot sy
+    kaam kar skta hy content ko 'get' bhe kar skta hy 'set' bhe kar skta hy or 'update' bhe kar skta hy.</p> 
+    <!-- sadasd --></h2>
+<h4>Node Creation:</h4>
+<p><b>createTextNode:</b> creates a new text node that needs to be appended to an existing element.
+    <br>
+<b>textContent:</b> directly sets or retrieves the text content of an existing element without creating a separate node.</p>
+<h3>Usage Scenario:</h3>
+Use <b>createTextNode</b> when you need to create a text node dynamically, perhaps to manipulate it further before appending.
+Use <b>textContent</b> when you want a straightforward way to set or retrieve the text content of an existing element.
+<h3>Direct Modification:</h3>
+<b>createTextNode</b> involves creating a node separately and then appending it.
+<b>textContent</b> allows direct modification without the need for creating a separate node.
+<br>
+<em>Choose between them based on the specific requirements of your project and your coding style.</em>
+</main>
+
+    <footer>
+    <div>
+        <h1>Navigation links</h1>
+        <ul>
+            <li>facebook</li>
+            <li>Instagram</li>
+            <li>Google</li>
+            <li>Youtube</li>
+            <li>LinkedIn</li>
+            <li>Gmail</li>
+        </ul>
+    </div>
+    </footer>
+
+<form>
+    <label for="name">Name</label>
+    <input type="name" id="name">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+</form>
+<script src="./practise.js"></script>
+</body>
+</html>

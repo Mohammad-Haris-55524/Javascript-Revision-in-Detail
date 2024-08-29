@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-color-class{
+    background-color: blue;
+}
+.border-class {
+border: 2px solid red;
+}
+.color-class{
+color: yellow;
+}
+.font-size-class{
+  font-size: 5rem;
+}
+.focus-class{
+    background-color: aqua;
+}
