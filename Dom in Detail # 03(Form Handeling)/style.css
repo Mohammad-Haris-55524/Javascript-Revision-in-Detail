@@ -1,0 +1,179 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    border: 5px solid red;
+    width: 50%;
+}
+.outside{
+    background-color: yellow;
+    border: 5px solid red;
+
+} */
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+#form{
+    width: 100%;
+    background-image: url(./pexels-pixabay-531880.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#contact-form{
+    width: 45%;
+    height: 100%;
+    border: 4px solid rgb(255, 255, 255, .2);
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: auto;
+    padding: 1.5vw;
+    backdrop-filter: blur(15px);
+}
+input[type="text"],[type="email"],[type="password"],[type="date"]{
+    padding: 7px 20px; 
+    width: 100%;
+    color: #0a0a0a; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    background-color: rgb(86, 168, 212); 
+}
+
+/* Css for radio buttons */
+/* Style for radio buttons */
+input[type="radio"] {
+    /* Hide the default radio button */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust the size of the custom radio button */
+    height: 20px; /* Adjust the size of the custom radio button */
+    border-radius: 50%; /* Make the custom radio button round */
+    border: 2px solid #007bff; /* Add border to the custom radio button */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-right: 5px; /* Adjust spacing between radio button and label */
+    position: relative; /* Position relative for ::after pseudo-element */
+  }
+  
+  /* Style for checked radio buttons */
+  input[type="radio"]:checked {
+    background-color: #007bff; /* Change background color when radio button is checked */
+  }
+  
+  /* Additional styles for checked radio buttons */
+  input[type="radio"]:checked::after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Align to the center vertically */
+    left: 50%; /* Align to the center horizontally */
+    transform: translate(-50%, -50%); /* Center the dot */
+    width: 10px; /* Size of the dot */
+    height: 10px; /* Size of the dot */
+    background-color: #fff; /* Color of the dot */
+    border-radius: 50%; /* Make the dot round */
+  }
+  
+
+/* Css for checkboxes */
+input[type="checkbox"] {
+  /* Hide the default checkbox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px; /* Adjust the size of the custom checkbox */
+  height: 20px; /* Adjust the size of the custom checkbox */
+   border: 2px solid #007bff; /*Add border to the custom checkbox */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Change cursor to pointer */
+  margin-right: 5px; /* Adjust spacing between checkbox and label */
+}
+input[type="checkbox"]:checked {
+    background-color: #007bff; 
+  }
+  input[type="checkbox"]:checked::before {
+  content: '\2713'; /* Unicode checkmark symbol */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid #007bff; /* Border color */
+  color: #fff; /* Text color */
+  border-radius: 3px; /* Border radius */
+  margin-right: 10px; /* Adjust spacing between checkmark and checkbox label */
+}
+
+.top-form-section label{
+    font-size: large;
+    font-weight: 500;
+    opacity: 0.9;
+    padding: 0.2vw 0;
+}
+.bottom-down-section p,#country-section label{
+    font-size: large;
+    font-weight: 500;
+    opacity: 0.9;
+    padding: 0.2vw 0;
+    margin: 0;
+}
+#country-section {
+    margin-bottom: 20px; /* Add some space below the country section */
+  }
+  select {
+    width: 100%; 
+    padding: 8px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    background-color: rgb(86, 168, 212);  
+    color: #000000; 
+    cursor: pointer; 
+    /* color: white; */
+  }
+  
+  option:first-child {
+    color: #f1e1e1; /* Set the color of the placeholder option */
+  }
+  
+
+
+.parent{
+  display: flex;
+  justify-content: space-around;
+}
+
+.parent div{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+.form-data{
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cutom-appended-class{
+border: 2px solid black;
+padding: 10px 5px;
+color: green;
+}

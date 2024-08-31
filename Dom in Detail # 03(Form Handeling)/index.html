@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handeleing Using JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+<div id="form" >
+<!--************** TWO BEST appoaches to access form values ***************** -->
+<!--TWO Best Appoaches to fullfills form validations and can restrict form default behavior of refreshing on every submit -->
+<!-- 1) By accessing form value using id selector -->
+<form id="contact-form">
+<!-- (2) Passing onSubmit = passFunctionName(Pass an event here to stop default behavior of form)  -->
+<!-- <form onsubmit = formSubmission(event)> -->
+    <!--************** Wrong appoaches to access form values***************** -->
+<!-- <form onclick = formSubmission(event)> -->
+<!-- <form> -->
+<div class="top-form-section">
+    <h3 style="text-align: center; text-decoration: underline; font-style: oblique;">
+    User Information Form</h3>
+    <label for="name">Name:</label>
+    <div>
+    <input type="text" name="name" id="name" required>
+    </div>
+    <label for="email">Email:</label>
+    <div>
+    <input type="email" name="email" id="email"required>
+    </div>
+    <label for="password">Password:</label>
+    <div>
+    <input type="password" name="password" id="password" minlength="5" maxlength="10" required>
+    </div>
+    <label for="registration">Registration:</label>
+    <div>
+    <input type="date" name="registration" id="registration" required>
+    </div>
+</div>
+<!-- We use radio buttons when we need that user can select any one field at a time and NOTE that: name field should
+    always be same in radio buttons otherwise the user could not be able to select only 1 field at a time.   -->
+<div class="bottom-down-section">
+<div id="gender-section">
+    <p>Gender:</p>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other">Other</label>
+</div>
+
+<!-- We use check boxex when we need that user can select one or more than one feilds at a time -->
+<!-- <div id="intrests"></div> -->
+<div id="interest-section">
+    <p>Intrests:</p>
+    <label for="sports">Sports</label>
+    <input type="checkbox" name="intrests" id="sports" value="sports">
+    <label for="music">Music</label>
+    <input type="checkbox" name="intrests" id="music" value="music">
+    <label for="travel">Travel</label>
+    <input type="checkbox" name="intrests" id="travel" value="travel">  
+</div>
+
+<div id="country-section">
+    <label for="country">Country</label>
+    <select name="country" id="country">
+        <option>Please select any one country</option>
+        <option value="turkey">Turkey</option>
+        <option value="pakistan">Pakistan</option> 
+        <option value="germany">Germany</option>
+        <option value="srilanka">Srilanka</option>
+        <option value="india">India</option>
+    </select>
+</div>
+
+    <!-- GOOD APPROACH -->
+    <!-- ISS MY CODE TAB TAK EXECUTE NAE HOGA OR FORM BHE USS TIME TAK SUBMIT NAE HOGA JAB TAK USER TAMAM KI TAMAM FORM
+    VALIDATIONS FULL FILL NAE KAR DETA TAB TAK NA CODE EXECUTE HOGA NA HI FORM SUBMIT HOGA. -->
+    <!-- BUTTON KI MY TYPE 'FORM' may BY DEFAULT 'SUBMIT' HOTI HY AB BESHAK type="submit"LIKHO YA NAE LIKHO RAHEY GI TYPE 
+    SUBMIT HI OR NORMAL BUTTON KI TYPE WITHOUT FORM ON BUTTON type="BUTTON" HOTI HY -->
+    <!-- Iss appraoch ky through ham validations bhe fullfill kara skty han or form ky refresh hony ka by default behaior
+    bhe rok skty han -->
+    <button class="btn btn-success" type="submit">Submit</button>   
+    <!-- <button>Submit</button>    -->
+</div>
+    <!-- BETTER APPROACH -->
+    <!-- Yah input wali input type ky through form ki submission ham sirf tab use karty han jab haamary pas form ky andar 
+    action or method use ho raha ho-->
+    <!-- <input type="submit" value="submit">  -->
+
+
+<!-- 
+    "DO NOT USE THIS APROACH" BY USING ONCLICK WITH THE COMBINATION OF SIMPLE <FORM> TAG
+    ON CLICK BUTTON PAR FORM KY ANDAR USE NAE KAREN GY GY KIU ? KIU KY AGAR BUTTON PAR ON CLICK LAGAYEN GY TO HAM NY AIK 
+    BAAT NOTE KI HY KY WOH VALIDATIONS KO CHECK KAREY BEGAIR HI OUTPUT CONSOLE PAR SHOW KARA RAHA HY LEKIN FORM KA 
+    BHAVIOR AISA NAE HOTA. FORM KA BEHAVIOUR HAMESHA YAH HONA CHAIHYEE KY FORM KO USS TIME TAK SUBMIT YAH CONSOLE PAR 
+    SHOW NAE KIYA JAA SKTA YANI CODE KO USS TIME TAK NAE CHALAYA JAA SKTA JAB TAK SARI KI SARI VALIDATIONS USER 
+    FULL FILL NAA KAR DY TAB TAK WOH SUBMIT NAE HO SKTA YAH CODE EXECUTE NAE HOGA-->
+    <!-- Yah validation bhe or code bhe aik sath chala raha hy jo ghalat approach hy code uss time tak submit nae hona
+    chaihyee jab tak user tamam ki tamam validation full fill nae kare deta abi yahaan to name password email or date my 
+    aik hi required ki validation hay hamray pas or bhe bhot validation ho skti han in future for example min max pattern
+    wagera ki to jab tak user validation full fill nae karey ga na code chaly ga na form submit hoga  -->
+    <!-- Iss approach sy ham page ka refresh hony ka default behavior to rok skty han lekin validation ko fullfill nae 
+    karti yah approach yani validations check nae karti or aisy hi code chal jata hy jo sahi cheez nae hay -->
+    <!-- <button onclick="formSubmission(event)">Submit</button>  -->
+    <!-- <button onclick="formSubmission()">Submit</button>  -->
+    
+</div>
+</form>
+</div>
+<h1>User Information:</h1>
+<div class="form-data"> 
+    
+</div>
+</div>
+
+<!-- <div class="parent">
+    <div class="box-1" id="box-1">box1</div>
+    <div class="box-1">box2</div>
+    <div class="box-1">box3</div>
+    <div class="box-1">box4</div>
+</div> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./practise.js"></script>
+</body>
+</html>
