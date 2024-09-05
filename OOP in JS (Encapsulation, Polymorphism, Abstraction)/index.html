@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./practise.js"></script>
+    <h1>TOpics covered in the chapter</h1>
+    <h4>1)Procedural Programming VS OOP</h4>
+    <h4>2)Encapsulation using Procedural programming</h4>
+    <h4>3)Encapsulation in detail</h4>
+    <h4>4)Why we need to use encapsulation?</h4>
+    <h4>5)Setter and Getter function</h4>
+    <h4>6)Access modifiers</h4>
+    <h4>7)POLYMORPHISM</h4>
+    <h4>8)Differnce between method overloading and method overriding</h4>
+    <h4>9)What are static properties and methods</h4>
+    <h5>
+      Encapsulation is one of the fundamental principles of object-oriented
+      programming (OOP). It involves bundling data (attributes) and methods
+      (functions) that operate on that data into a single unit called a class.
+      The class serves as a blueprint for creating objects, and it hides the
+      internal state and implementation details of its objects from the outside
+      world. This way, the object's internal state can only be modified through
+      its methods, ensuring data integrity and security.
+    </h5>
+    Understanding when to use getter and setter functions comes down to the
+    design of your application and the requirements of your data model. Here are
+    some considerations that can help you decide when to use getter and setter
+    functions:
+    <ul>
+      <li>
+        1. **Encapsulation and Data Integrity**: - Getter and setter functions
+        are commonly used to encapsulate access to class properties, ensuring
+        data integrity and providing controlled access to the properties. -
+        Getter functions allow controlled access to retrieve the value of a
+        property, while setter functions allow controlled access to modify the
+        value of a property. - Use setter functions when you need to perform
+        validation or execute logic before setting a property's value. This
+        helps ensure that only valid data is assigned to the property.
+      </li>
+      <li>
+        2. **Data Validation and Transformation**: - Setter functions are
+        particularly useful for validating input data and transforming it if
+        necessary before assigning it to a property. - For example, you might
+        use a setter function to ensure that a numerical property is within a
+        certain range, or to convert input data to a specific format before
+        assigning it to a property.
+      </li>
+      <li>
+        3. **Computed Properties**: - Getter functions can be used to compute or
+        derive properties based on other properties' values. - For example, you
+        might use a getter function to calculate the total price of a shopping
+        cart based on the prices and quantities of individual items in the cart.
+      </li>
+      <li>
+        4. **Access Control**: - Getter and setter functions can also be used to
+        control access to private or protected properties, even though
+        JavaScript does not have true access control mechanisms like some other
+        languages.
+      </li>
+    </ul>
+
+    Regarding your question about encapsulation and the use of getter and setter
+    functions:
+    <ul>
+      <li>
+        Getter and setter functions are commonly used in encapsulation to
+        protect the internal state of an object and ensure data integrity.
+      </li>
+      <li>
+        - While encapsulation is a primary motivation for using getter and
+        setter functions, they can also serve other purposes, such as data
+        validation, transformation, and access control.
+      </li>
+      <li>
+        - By using getter and setter functions, you can enforce constraints on
+        the data being assigned to properties, ensuring that only valid data is
+        used and preventing potential errors or unexpected behavior in your
+        code.
+      </li>
+    </ul>
+    In summary, while encapsulation is a key aspect of using getter and setter
+    functions, they also offer additional benefits such as data validation,
+    transformation, and access control, making them valuable tools for
+    maintaining the integrity and reliability of your code.
+  </body>
+</html>
